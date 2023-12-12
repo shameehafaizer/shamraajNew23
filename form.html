@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <title> My Website</title>
+    <meta name="view port" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<script src="main.js" defer > </script>
+    <body>
+        <img src="bedside-lamp-843461_1920.jpg"  class="bg2" alt="bg">
+        <header>
+            <div class="navbar">
+            
+                <ul>
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="Branchpage.html">Branches </a> </li>
+                    <li> <a href="Adventurespage.html"> Adventures </a> </li>
+                    <li> <a href="Restaurant.html"> Restaurant </a> </li>
+                </ul>
+            </div>
+           
+        </header>
+        <div class="logo2">
+            <img src="newwhitelogo.webp" alt="logo" >
+        </div>
+
+<div class="container">
+<form class="action" >
+    <div class="user-details">
+        <div class="input-box">
+    <h2> Bookings & Reservations </h2>
+    <br>
+    <br>
+    <form>
+    <label for ="name">  Name </label> <br>
+    <input type="text" id="nameInput" > <br>
+    
+    <label for="contact"> Contact Number </label> <br>
+    <input type="text" id="contactInput"> <br>
+
+<label for="duration">Duration of Stay (days)</label>
+<input type="number" id="duration" min="1" value="1">
+<br>
+
+         <label for ="guests">  Number Of Adults </label> <br>
+         <input type="text" id="adultInput" > <br>
+
+         <label for ="guests">  Number Of Children </label> <br>
+         <input type="text" id="childrenInput" > <br> <br>
+
+         <label for="Branch">Choose a Branch</label> <br>
+         <select name="Branch" id="branchInput" >   
+             <option value="hambantota">Hambantota</option>
+             <option value="trincomalee">Trincomalee</option>
+             <option value="galle">Galle</option>
+           </select> 
+           <br><br>
+
+
+         <label for ="Room_type"> Room Type  </label> <br>
+         <select name="Room types" id="Room_type">
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            </select>
+
+            <br>
+            <label for="Number of Rooms"> Number Of Rooms </label> <br>
+            <input type="text" id="NoofRooms">
+            <br>
+            <!-- <h3 id="extraRequirements">  Extra Requirements </h3> <br><br>
+            
+
+            <label for="extra bed">Extra Bed</label>
+            <input type="checkbox" id="">
+             <br>
+
+            <label for="wifi">WiFi</label>
+            <input type="checkbox" id="extraRequirements">
+             <br>
+
+             <label for="pool  view">Pool View</label>
+             <input type="checkbox" id="extraRequirements">
+              <br>
+              
+              <label for="Garden view">Graden View</label>
+              <input type="checkbox" id="extraRequirements">
+             -->
+
+             <fieldset>
+
+                <legend>Extra Requirements</legend>
+                <p>
+                    <input type="checkbox" id="WiFi" name="Extra Requirements" value="WiFi">
+                    <label >WiFi Access</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="Pool"  name="Extra Requirements" value="Pool">
+                    <label >Pool View</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Garden"  name="Extra Requirements" value="Garden">
+                  <label >Garden View</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Extra-Bed"  name="Extra Requirements" value="Extra-Bed">
+                  <label >Extra-Bed</label>
+                </p>
+                
+              </fieldset><br>
+              
+<br> <br>
+        
+         <div class="button">
+         <input type="button" value="Book Now" id = "bookNow">
+         </div>
+         <p id="output1 "> </p>
+        
+
+         <!-- <div id="confirmation" class="hidden">
+            <p>Booking confirmed! 🎉</p>
+          </div> -->
+          <br>
+      
+          <div class="promo-container">
+            <label for="promoCode">Promo Code:</label>
+            <input type="text" id="promoCode" placeholder="Enter promo code">
+          </div>
+<br>
+<label for="loyaltyPoints">Loyalty Points:</label>
+<input type="text" id="loyaltyPoints" readonly>
+<br>
+
+      <br>
+  
+
+
+    <button onclick="addToFavorites()" id="favorites">Add to favorites</button>
+    <button onclick="checkLoyalty()"  id="loyalty">Check loyalty</button>
+
+    <br>
+    <br>
+
+    <h2> Adventure Booking </h2>
+    <br>
+    <label for="adventures">Choose an Adventure</label> <br>
+    <select name="adventures" id="adventuresInput" >   
+        <option value="Oceanic Amusements">Oceanic Amusements</option>
+        <option value="Sightseeing & Historical Tour">Sightseeing & Historical Tour</option>
+        <option value="Yachting Tours">Yachting Tours</option>
+        <option value="Golf Course">Golf Course</option>
+      </select> 
+      <br> 
+<label for="Number Of Adults">Number Of Adults(Local)</label>
+<input type="text" id="NumberOfAdults(local)" >
+<br>
+<br>
+<label for="Number Of Children">Number Of Children(Local & above 5 years)</label>
+<input type="text" id="NumberOfChildren(localandabove)">
+<br>
+<br>
+<label for="Number Of Children">Number Of Children(Local & below 5 years)</label>
+<input type="text" id="NumberOfChildren(localandbelow)" >
+<br>
+<br>
+<label for="Number Of Adults">Number Of Adults(foreign)</label>
+<input type="text" id="NumberOfAdultsForeign" >
+<br>
+<br>
+<label for="Number Of children">Number Of Children(foreign & above 5 years)</label>
+<input type="text" id="NumberOfChildrenforeignandabove " >
+<br><br>
+<label for="Number Of children">Number Of Childrens(foreign & below 5 years)</label>
+<input type="text" id="NumberOfChildrenForeignandbelow " >
+<br>
+<br>
+
+<div class="button">
+<input type="button" value="Book Adventure" id = "bookAdventure">
+</div>
+<p id = "output2"> </p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+
+<div id="bookingInfo">
+    <h2>Booking Information</h2> <br>
+    <p>Current Booking(s): <span id="currentBooking"></span></p> <br>
+    <p>Cost of Current Booking: <span id="currentCost">0</span> LKR</p> <br>
+    <p>Overall Booking: <span id="overallBooking"></span></p> <br>
+    <p>Overall Cost: <span id="overallCost">0</span> LKR</p> <br>
+  </div>
+</div>
+</form>
+
+<footer>
+
+        <h3> Contact Us At-</h3><br>Address : Greenland City, Srilanka <br>032 232 2323<br>
+         &copy; 2023 Shamraaj.All rights reserved.
+    
+</footer>
+</body>
+</html>
